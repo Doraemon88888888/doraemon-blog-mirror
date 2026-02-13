@@ -47,7 +47,7 @@ export const siteConfig: SiteConfig = {
 		userId: "your-bangumi-id", // 替换为实际Bangumi ID，测试值："sai"
 	},
 
-	// 横幅(Banner)配置 - 完整正确结构
+	// 横幅(Banner)配置 - 完整正确结构（无多余闭合括号）
 	banner: {
 		enable: true, // 是否启动Banner壁纸模式
 
@@ -131,8 +131,8 @@ export const siteConfig: SiteConfig = {
 		// 导航栏透明模式
 		navbar: {
 			transparentMode: "semifull", // semi(半透明)/full(全透明)/semifull(动态透明)
-		},
-	}, // banner 配置块正确闭合
+		}
+	}, // banner 配置块正确闭合（仅这一个闭合括号）
 
 	// 目录配置
 	toc: {
@@ -154,8 +154,8 @@ export const siteConfig: SiteConfig = {
 		hanalei: {
 			enable: true, // Hanalei字体（适配中文）
 		},
-	},
-};
+	}
+}; // siteConfig 对象正确闭合
 
 // ========================= 全屏壁纸配置 =========================
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
