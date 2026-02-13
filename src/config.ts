@@ -53,17 +53,40 @@ export const siteConfig: SiteConfig = {
 		userId: "your-bangumi-id", // 替换为实际Bangumi ID，测试值："sai"
 	},
 
-	// 横幅(Banner)配置
 	banner: {
-		enable: true,
-		src: {
-			desktop: BANNER_IMAGE_SUFFIX.map(item => BANNER_IMAGE_BASE_PATH.desktop + item),
-			mobile: BANNER_IMAGE_SUFFIX.map(item => BANNER_IMAGE_BASE_PATH.mobile + item),
-		},
-		position: "center", // object-position：'top'/'center'/'bottom'
-		carousel: {
-			enable: true, // 多张图片启用轮播（false则随机显示）
-			interval: 1.5, // 轮播间隔(秒)
+	enable: true, // 是否启动Banner壁纸模式
+
+	// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
+	src: {
+		desktop: [
+			"/assets/desktop-banner/d1.webp",
+			"/assets/desktop-banner/d2.webp",
+			"/assets/desktop-banner/d3.webp",
+			"/assets/desktop-banner/d4.webp",
+			"/assets/desktop-banner/d5.webp",
+			"/assets/desktop-banner/d6.webp",
+			"/assets/desktop-banner/d7.webp",
+			"/assets/desktop-banner/d8.webp",
+		], // 桌面横幅图片
+		mobile: [
+			"/assets/mobile-banner/m1.webp",
+			"/assets/mobile-banner/m2.webp",
+			"/assets/mobile-banner/m3.webp",
+			"/assets/mobile-banner/m4.webp",
+			"/assets/mobile-banner/m5.webp",
+			"/assets/mobile-banner/m6.webp",
+			"/assets/mobile-banner/m7.webp",
+			"/assets/mobile-banner/m8.webp",
+		], // 移动横幅图片
+	}, // 使用本地横幅图片
+
+	position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
+
+	carousel: {
+		enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
+
+		interval: 1.5, // 轮播间隔时间（秒）
+	},
 		},
 		// PicFlow API配置（智能图片API）
 		imageApi: {
