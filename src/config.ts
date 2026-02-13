@@ -503,7 +503,7 @@ export const widgetConfigs = {
 	layout: sidebarLayoutConfig,
 	sakura: sakuraConfig,
 	fullscreenWallpaper: fullscreenWallpaperConfig,
-	pio: pioConfig, // 添加 pio 配置
+//	pio: pioConfig, 
 } as const;
 
 export const umamiConfig = {
