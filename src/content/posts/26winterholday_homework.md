@@ -41,6 +41,7 @@ pinned: true
 
 ## 化学
 1. 完成《分类详解》<mark style="background-color: #ffeb3b; color: red;">主题三P46-P111</mark>全部内容
+2. 背诵P116<mark style="background-color: #ffeb3b; color: red;">部分酸、碱和盐的溶解性表（室温）</mark>
 
 ## 历史
 1. 完成七年级<mark style="background-color: #ffeb3b; color: red;">P1-22单数选择81题+材料题4题</mark>
@@ -51,3 +52,4 @@ pinned: true
 ## 政治
 1. 闭卷复习<mark style="background-color: #ffeb3b; color: red;">八下、九上、九下基础知识点（P15-21）</mark>
 2. 完成<mark style="background-color: #ffeb3b; color: red;">闭卷填空题</mark>，限时约40分钟
+
